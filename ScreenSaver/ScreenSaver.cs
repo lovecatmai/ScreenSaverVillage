@@ -17,6 +17,7 @@ namespace ScreenSaver
         private void ScreenSaver_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawImage(backgroundImg, ClientRectangle);
+            e.Graphics.DrawImage(snowflakeImg, 10, 10);
         }
     }
 }
