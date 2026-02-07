@@ -3,8 +3,8 @@
 /// </summary>
 public struct Snowflake
 {
-    private const int minSpeed = 1;
-    private const int maxSpeed = 2;
+    private const int minSpeed = 5;
+    private const int maxSpeed = 10;
     private const int midSize = 20;
 
     /// <summary>

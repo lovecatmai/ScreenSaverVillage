@@ -10,9 +10,9 @@ namespace ScreenSaver
         private const int NumOfSnowflakes = 150;
         private const int snowflakeMinSideSize = 10;
         private const int snowflakeMaxSideSize = 30;
-        private const int timerInterval = 10;
+        private const int timerInterval = 1;
         private const int snowflakeInitialYMaxY = 0;
-        private const int snowflakeInitialYMinY = -200;
+        private const int snowflakeInitialYMinY = -1300;
 
         private Random rand = new Random();
         private Bitmap backgroundImg;
@@ -23,6 +23,9 @@ namespace ScreenSaver
 
         private Snowflake[] snowflakes;
 
+        /// <summary>
+        /// Инициализирует новый экземпляр <see cref="ScreenSaver"/>.
+        /// </summary>
         public ScreenSaver()
         {
             InitializeComponent();
