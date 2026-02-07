@@ -34,11 +34,15 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "ScreenSaver";
             Text = "ScreenSaver";
             WindowState = FormWindowState.Maximized;
-            Paint += ScreenSaver_Paint;
+            Load += ScreenSaver_Load;
+            KeyDown += ScreenSaver_KeyDown;
+            MouseClick += ScreenSaver_MouseClick;
             ResumeLayout(false);
         }
 
